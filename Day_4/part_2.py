@@ -52,6 +52,7 @@ def part_two():
 
         byr = eval(p[key]['byr'])
         if byr < 1920 or byr > 2002 or len(str(byr)) != 4:
+            '''print(byr)'''
             continue
         else:
             '''print(byr)'''
@@ -91,7 +92,7 @@ def part_two():
                     pass
         else:
             '''print("[{}]".format(hgt))'''
-            pass
+            continue
         hcl = p[key]['hcl']
         if re.match('^#[a-f0-9]{6}$', hcl) is not None:
             '''print(hcl)'''
@@ -111,11 +112,9 @@ def part_two():
             '''print(pid)'''
             pass
         else:
-            print(pid)
+            '''print(pid)'''
             continue
-
         count += 1
-
     return count
 
 
