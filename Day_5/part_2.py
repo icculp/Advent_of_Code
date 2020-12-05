@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    Day 4 of Advent of Code 2020
+    Day 3 of Advent of Code 2020
 """
 import re
 
