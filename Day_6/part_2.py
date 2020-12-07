@@ -24,13 +24,10 @@ def part_two():
     '''lines = [['addddabcba\nbcdddddddddddddddddddddddddddddbcdedf', 'abcdef'], ['abcde', 'bcdeeeaa']]'''
     print(len(lines))
     for i in range(len(lines)):
-        temp = ''
+        temp = []
         for li in lines[i]:
-            temp += li
-        print(temp)
-        print(set(temp))
-        print(len(set(temp)))
-        b = a.intersection(set(temp))
+            temp.append(set(li))
+        b = a.intersection(*temp)
         counts.append(len(b))
     print(counts)
     return(sum(counts))
