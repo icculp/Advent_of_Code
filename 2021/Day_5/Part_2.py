@@ -54,7 +54,7 @@ print(np.array(np.where(crossed > 1)).shape)
 # 17193 actual...
 
 
-# borrowed from https://github.com/jwalrus/adventofcode/blob/main/2021/day05.py
+# borrowed from https://www.reddit.com/r/adventofcode/comments/r9824c/2021_day_5_solutions/hnd3a5v/?utm_source=reddit&utm_medium=web2x&context=3
 grid = np.zeros((2, 1000, 1000))
 #ls = np.fromregex(open(0), '\d+', [('',int)]*4)
 
